@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+            color: red;
+            font-weight: bold;            
+        }
+
+        a:visited {
+            color: rgb(89, 55, 55);
+        }
+
+        a:active {
+            color: yellow;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+
+        a::after {
+            content: "⇐";
+        }
+
+        a::before {
+            content: "⇒"; 
+        }
+
+
+        .especial{
+            background-color: rgb(240, 135, 135);
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li>
+            <a href="https://facebook.com" target="_blank">site do facebook</a>
+        </li>
+        <li>
+            <a href="https://twitter.com/home" target="_blank" class="especial">site do twitter</a>
+        </li>
+        <li>
+            <a href="https://www.youtube.com/" target="_blank">site do youtube</a>
+        </li>
+    </ul>
+</body>
+</html>

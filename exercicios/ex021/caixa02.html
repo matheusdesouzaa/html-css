@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tags de agrupamento</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgrey;
+            margin: 0px;
+        }
+        footer {
+            text-align: center;
+            background-color: black;
+            color: white;
+            padding: 1px;
+            margin: 0px
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        header >a:hover {
+            text-decoration: underline
+        }
+        nav{
+            background-color: rgb(81, 81, 81);
+            padding: 3px;
+            box-shadow: 2px 5px 12px rgba(0, 0, 0, 0.434);
+            
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav >a:hover {
+            text-decoration: underline;
+        }
+        nav>a {
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+            margin-right: 30px;
+        }
+        article >aside{
+            background-color: grey;
+        }
+        article{
+            background-color: lightgray;
+            padding: 5px;
+        }
+        footer>p {
+            margin: 0px;
+        }
+        #bola{
+            background-color: rgb(80, 97, 111);
+            width: 100px;
+            height: 100px;
+            margin: 10px auto;
+            border-radius: 50%;
+            box-shadow: inset 10px 10px 10px 20px rgba(239, 74, 79, 0.459);
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float{
+            0%{
+                transform: translateY(0);
+            }
+            50%{
+                transform: translateY(-25px);
+            }
+            100%{
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>meu site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>esporte politica tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article id="arroz">
+                <h2>noticias sobre o brasil</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, adipisci cupiditate tenetur eaque temporibus repudiandae sequi cumque, necessitatibus reprehenderit odit nostrum possimus minima alias deleniti nam ab quisquam, doloribus voluptates.</p>
+                    <aside>
+                        <p>artigo escrito por jose da silva</p>
+                    </aside>
+            </article>
+            <article>
+            <div id="bola"></div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>desenvolvido por Curso em Video</p>
+    </footer>
+</body>
+</html>
